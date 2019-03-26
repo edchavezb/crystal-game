@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Crystal Madness</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row pl-1 pr-3">
+        <div class="col-6"> <h1>Crystal Madness!</h1></div> 
+        <div class="col-6 level"> <h1>Level: <span id="game-level"></span></h1></div> 
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-4">
+        <div class="card">
+          <h5 class="card-header">Your crystals</h5>
+          <div class="card-body mt-2">
+            <div id="crystals"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8">
+        
+        <div class="row">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <h5 class="card-header">Goal</h5>
+                  <div class="card-body pt-2">
+                      <span class="numDisplay" id="number-to-guess"></span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-6">
+                <div class="card">
+                  <h5 class="card-header">Your score</h5>
+                  <div class="card-body pt-2">
+                    <span class="numDisplay" id="user-score"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+
+              <div class="col-6">
+                <div class="card">
+                  <h5 class="card-header">Collection</h5>
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card"> 
+                  <h5 class="card-header">Global score</h5>
+                  <div class="card-body">
+                    <h5>Wins: <span id="user-wins"></span> <br> Losses: <span id="user-losses"></span></h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-3">
+              <div class = "col-12">
+                <div class="alert alert-warning pb-0" role="alert">
+                  <ul>
+                    <li>Each crystal has a random numeric value</li>
+                    <li>Grab enough crystals to reach the goal and win!</li>
+                    <li>You lose if the time runs out or if you surpass the goal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <h5 class="card-header">Time left:</h5>
+              <div class="card-body pt-2">
+                <span class="numDisplay" id="time-left"></span> <hr>
+                <div class="row px-3">
+                  <button class="start btn btn-block btn-primary btn-lg mt-4 mb-2">Start game</button>
+                  <button class="pause btn btn-block btn-success btn-lg mt-0 mb-2">Pause</button>
+                  <button class="restart btn btn-block btn-secondary btn-lg mt-0 mb-2">New game</button>
+                  <button class="info btn btn-block btn-warning btn-lg mt-0 mb-2">Instructions</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+
+</html>
