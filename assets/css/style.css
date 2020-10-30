@@ -48,3 +48,24 @@
 .level{
   text-align: right
 }
+
+@media screen and (max-width: 768px){
+
+  .crystal-image {
+    width: 25%;
+    height: auto;
+  }
+
+  #dashboard {
+    margin-top: 20px;
+  }
+
+  .numDisplay {
+    font-size: 2rem;
+  }
+
+  #extra {
+    display: none;
+  }
+
+}
